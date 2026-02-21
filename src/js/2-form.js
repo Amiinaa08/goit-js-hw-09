@@ -13,7 +13,7 @@ if (savedData) {
 
 form.addEventListener('input', event => {
   const fieldName = event.target.name;
-  const fieldValue = event.target.value.trim();
+  const fieldValue = event.target.value;
   formData[fieldName] = fieldValue;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 });
